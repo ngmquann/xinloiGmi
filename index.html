@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita-Swashed">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="snow-container">
+        <div class="snow foreground"></div>
+        <div class="snow foreground layered"></div>
+        <div class="snow middleground"></div>
+        <div class="snow middleground layered"></div>
+        <div class="snow background"></div>
+        <div class="snow background layered"></div>
+      </div>
+      <div class="frame">
+        <div id="button_open_envelope" style="text-align: center;">
+          Open
+        </div>
+        <div class="message" style="text-align: center;">
+          <div>
+            <br>
+            <br>
+            <h1 style="font-family: Damion,cursive;">Đơn xin lỗi</h1>
+            <span style="display: flex; padding-left: 15px; font-family: Damion,cursive;">Gửi Gmi iu dấu</span>
+            <p style="padding-left: 15px; text-align: left; font-family: Damion,cursive;">
+                Anh không thể quay ngược thời gian, nhưng anh rất muốn xin lỗi em vì những lời anh vừa nói với em và những việc sai lầm anh đã làm. Xin em hãy rộng lòng tha thứ và cho anh cơ hội để sửa chữa.
+            </p>
+            <p style="padding-left: 15px; text-align: left; font-family: Damion,cursive;">
+                Anh iu eim nhìu nhắm ❤️
+            </p>
+            <p style="padding-left: 15px; text-align: right; font-family: Damion,cursive;">
+                Anh ngiu đzai =^.^=
+            </p>
+        </div>
+        </div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="top"></div>
+      </div>
+      </div>
+
+      <script>
+        $(document).ready(function () {
+  $(".frame").click(function () {
+    $(".top").addClass("open");
+    $(".message").addClass("pull");
+  });
+});
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+      </script>
+</body>
+</html>
