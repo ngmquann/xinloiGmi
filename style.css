@@ -126,7 +126,7 @@ body{
   }
   
   .frame {
-    width: 100vw;
+    width: 600px;
     height: 350px;
     margin: 250px auto 0;
     position: relative;
@@ -155,7 +155,7 @@ body{
   }
   .message {
     position: relative;
-    width: 100vw;
+    width: 580px;
     min-height: 300px;
     height: auto;
     background: #fff;
